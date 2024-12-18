@@ -516,7 +516,6 @@ for i, row in hist_euro_data_df.iterrows():
     hist_euro_data_df.iloc[i]['att_mkt_val'] = adj_att_mkt_val
     hist_euro_data_df.iloc[i]['att_mean_mkt_val'] = adj_mean_att_mkt_val
 
-#print(hist_euro_data_df)
 # We now have our model ready dataset
 
 # II. Apply Clustering Model
@@ -525,8 +524,6 @@ for i, row in hist_euro_data_df.iterrows():
 hist_euro_data_df_numeric = hist_euro_data_df.select_dtypes(include='number')
 # Drop year this is not a predictor
 hist_euro_data_df_numeric.drop(columns=['year'], inplace=True)
-
-#print(hist_euro_data_df_numeric)
 
 # Set seed
 np.random.seed(0)
