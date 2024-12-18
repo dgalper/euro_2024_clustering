@@ -160,7 +160,7 @@ for i in range(len(team_major_finish_df.max_stage)):
         team_major_finish_df.max_stage.iloc[i] = "Semi-finals"
 
 
-# Function to Ccean a couple of team names
+# Function to clean a couple of team names
 def clean_names(name):
     if name == "United States":
         return "USA"
